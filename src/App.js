@@ -1,12 +1,11 @@
 import "./App.css";
-import React, { Component } from "react";
-import { GiFishing } from "react-icons/gi";
+import Boot from "./pages/boot/"
 
 function App() {
   return (
     <div className="App">
       <div className="App-content">
-        <GiFishing className="power-logo" />
+          <Boot />
       </div>
     </div>
   );
