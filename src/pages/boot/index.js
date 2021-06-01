@@ -7,7 +7,9 @@ class Boot extends Component {
             <div className="boot-page">
                 <div className="center-box">
                     <GiFishing className="logo"/>
-                    <div className="load-bar"></div>
+                    <div className="load-bar">
+                        <div className="bar"></div>
+                    </div>
                 </div> 
             </div>
          );
