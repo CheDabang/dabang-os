@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import { GiFishing } from "react-icons/gi";
 import "./index.less";
 class Boot extends Component {
-  setLoading() {
-    alert(1111);
-  }
-
   componentDidMount() {
     setTimeout(() => {
       this.props.setLoading(false);
