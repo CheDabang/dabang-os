@@ -13,8 +13,12 @@ class Login extends Component {
             alt="头像"
           />
           <div>
-            <p>CheDabang</p>
-            <input placeholder="Enter Password" />
+            <p className="user-name">CheDabang</p>
+            <input
+              placeholder="Enter Password"
+              className="pass-word"
+              type="password"
+            />
           </div>
         </div>
         <div className="bottom-box"></div>
