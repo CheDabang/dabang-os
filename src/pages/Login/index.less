@@ -23,24 +23,72 @@
   }
   .center-box {
     z-index: 1;
-
     .avatar {
-      margin-bottom: 10px;
-      width: 96px;
-      height: 96px;
+      margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
     }
     .user-name {
-      margin-bottom: 10px;
-      font-size: 40px;
-      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 36px;
     }
-    .pass-word {
-      padding: 10px 10px;
-      border-radius: 4px;
-      font-size: 16px;
-      border: 1px solid #e5e6e7;
-      outline: none;
+    .password {
+      display: flex;
+      border: 2px solid #ccc;
+      &-input{
+        padding: 6px 10px;
+        width: 200px;
+        font-size: 16px;
+        // border: 1px solid #e5e6e7;
+        border: none;
+        outline: none;
+      }
+      .confirm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        background: rgba(55, 65, 81, 0.6);
+      }
+    }
+    .tip{
+      line-height: 20px;
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  .bottom-box{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .btn-list{
+      display: flex;
+      width: 200px;
+      justify-content: space-between;
+      .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+        .bg{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(55, 65, 81);
+        }
+      }
     }
   }
 }

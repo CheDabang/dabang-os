@@ -5,6 +5,10 @@ import Login from "./pages/Login/";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const resetOS = (e) => {
+    e.stopPropagation();
+    setLoading(true);
+  };
   if (loading) {
     return (
       <div className="App">
@@ -17,7 +21,7 @@ function App() {
     return (
       <div className="App">
         <div className="App-content">
-          <Login />
+          <Login resetOS={resetOS} />
         </div>
       </div>
     );
